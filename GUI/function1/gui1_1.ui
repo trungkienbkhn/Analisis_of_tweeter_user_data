@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>361</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GolSan2D</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(216, 255, 255);</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="back_arrow">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../image/back_arrow.png</normaloff>../image/back_arrow.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="location">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 238, 236);</string>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string>hanoi</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>hanoi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hochiminh</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="location_details">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>124</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(115, 210, 22);</string>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Location Details</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>81</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>From Time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>290</y>
+      <width>81</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>To Time</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="top">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>390</y>
+      <width>65</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 238, 236);</string>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="currentText">
+     <string>5</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="filter">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>390</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(115, 210, 22)</string>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Filter</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="to_date">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>290</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 238, 236);</string>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="displayFormat">
+     <string>dd-MM-yyyy</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="date">
+     <date>
+      <year>2020</year>
+      <month>3</month>
+      <day>24</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="from_date">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>250</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 238, 236);</string>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="displayFormat">
+     <string>dd-MM-yyyy</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="date">
+     <date>
+      <year>2020</year>
+      <month>3</month>
+      <day>20</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_icon_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>470</y>
+      <width>261</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../image/Hust_Logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>91</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Choose city</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
