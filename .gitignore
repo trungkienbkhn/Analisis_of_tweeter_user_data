@@ -1,0 +1,7 @@
+env/
+GUI/__pycache__/
+GUI/function1/__pycache__/
+GUI/function2/__pycache__/
+GUI/function3/__pycache__/
+GUI/function4/__pycache__/
+Connector/function1/Query/__pycache__/
